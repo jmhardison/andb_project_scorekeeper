@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="teamTextSize">14sp</dimen>
+    <dimen name="teamTextTopPadding">16dp</dimen>
+    <dimen name="teamTextBottomPadding">13dp</dimen>
+    <dimen name="scoreBottomPadding">24dp</dimen>
+    <dimen name="scoreTextSize">56sp</dimen>
+    <dimen name="pointButtonPaddingBottom">8dp</dimen>
+    <dimen name="pointButtonPaddingRight">24dp</dimen>
+    <dimen name="pointButtonPaddingLeft">24dp</dimen>
+    <dimen name="buttonResetMarginBottom">32dp</dimen>
+    <dimen name="generalLayoutHeight">0dp</dimen>
+    <dimen name="generalLayoutWidth">0dp</dimen>
+    <dimen name="dividerWidth">1dp</dimen>
+    <dimen name="dividerMarginTop">16dp</dimen>
+    <dimen name="dividerMarginBottom">40dp</dimen>
+    <dimen name="bottomLayoutHeight">1dp</dimen>
+</resources>

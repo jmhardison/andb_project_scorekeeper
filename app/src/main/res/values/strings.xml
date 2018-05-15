@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Basketball Score Keeper</string>
+    <string name="team_a_string">Team A</string>
+    <string name="teamTextFont">sans-serif-medium</string>
+    <string name="team_b_string">Team B</string>
+    <string name="scoreInitialValue">0</string>
+    <string name="scoreTextFont">sans-serif-light</string>
+    <string name="pointButton3PointText">+3 Points</string>
+    <string name="pointButton2PointText">+2 Points</string>
+    <string name="pointButtonFreeThrowText">Free Throw</string>
+    <string name="buttonResetText">Reset</string>
+</resources>

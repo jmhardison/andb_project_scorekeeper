@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/generalLayoutHeight"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="@dimen/generalLayoutWidth"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/team_a_string"
+                android:textSize="@dimen/teamTextSize"
+                android:textColor="@color/teamTextColor"
+                android:fontFamily="@string/teamTextFont"
+                android:textAlignment="center"
+                android:paddingTop="@dimen/teamTextTopPadding"
+                android:paddingBottom="@dimen/teamTextBottomPadding"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/scoreInitialValue"
+                android:paddingBottom="@dimen/scoreBottomPadding"
+                android:textSize="@dimen/scoreTextSize"
+                android:textColor="@color/scoreTextColor"
+                android:fontFamily="@string/scoreTextFont"
+                android:id="@+id/team_a_score"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/pointButtonPaddingBottom"
+                android:paddingRight="@dimen/pointButtonPaddingRight"
+                android:paddingLeft="@dimen/pointButtonPaddingLeft"
+                android:text="@string/pointButton3PointText"
+                android:onClick="btnPress3a"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/pointButtonPaddingBottom"
+                android:paddingRight="@dimen/pointButtonPaddingRight"
+                android:paddingLeft="@dimen/pointButtonPaddingLeft"
+                android:onClick="btnPress2a"
+                android:text="@string/pointButton2PointText"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/pointButtonPaddingBottom"
+                android:paddingRight="@dimen/pointButtonPaddingRight"
+                android:paddingLeft="@dimen/pointButtonPaddingLeft"
+                android:onClick="btnPressFreea"
+                android:text="@string/pointButtonFreeThrowText"/>
+        </LinearLayout>
+
+        <View android:layout_height="match_parent"
+            android:layout_width="@dimen/dividerWidth"
+            android:layout_marginTop="@dimen/dividerMarginTop"
+            android:layout_marginBottom="@dimen/dividerMarginBottom"
+            android:background="@android:color/darker_gray">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="@dimen/generalLayoutWidth"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/team_b_string"
+                android:textAlignment="center"
+                android:textSize="@dimen/teamTextSize"
+                android:textColor="@color/teamTextColor"
+                android:fontFamily="@string/teamTextFont"
+                android:paddingTop="@dimen/teamTextTopPadding"
+                android:paddingBottom="@dimen/teamTextBottomPadding"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/scoreInitialValue"
+                android:paddingBottom="@dimen/scoreBottomPadding"
+                android:textSize="@dimen/scoreTextSize"
+                android:textColor="@color/scoreTextColor"
+                android:fontFamily="@string/scoreTextFont"
+                android:id="@+id/team_b_score"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/pointButtonPaddingBottom"
+                android:paddingRight="@dimen/pointButtonPaddingRight"
+                android:paddingLeft="@dimen/pointButtonPaddingLeft"
+                android:text="@string/pointButton3PointText"
+                android:onClick="btnPress3b"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/pointButtonPaddingBottom"
+                android:paddingRight="@dimen/pointButtonPaddingRight"
+                android:paddingLeft="@dimen/pointButtonPaddingLeft"
+                android:onClick="btnPress2b"
+                android:text="@string/pointButton2PointText"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/pointButtonPaddingBottom"
+                android:paddingRight="@dimen/pointButtonPaddingRight"
+                android:paddingLeft="@dimen/pointButtonPaddingLeft"
+                android:onClick="btnPressFreeb"
+                android:text="@string/pointButtonFreeThrowText"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomLayoutHeight"
+        android:layout_weight="1"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonResetText"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/buttonResetMarginBottom"
+            android:onClick="resetButton"/>
+    </RelativeLayout>
+</LinearLayout>
